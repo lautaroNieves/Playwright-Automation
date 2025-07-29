@@ -8,7 +8,7 @@ const credentials = {
 
 
 test.describe("Testing Swag Labs site", () => {
-    test("Verfy login with valid credentials", async ({page}) => {
+    test("Verify login with valid credentials", async ({page}) => {
         await page.goto("https://www.saucedemo.com/");
         await expect(page).toHaveTitle("Swag Labs");
         
@@ -25,7 +25,7 @@ test.describe("Testing Swag Labs site", () => {
         await page.close();
     });
 
-    test("Verfy add to cart functionality", async ({page}) => {
+    test("Verify add to cart functionality", async ({page}) => {
         await page.goto("https://www.saucedemo.com/");
         await expect(page).toHaveTitle("Swag Labs");
         
@@ -93,7 +93,7 @@ test.describe("Testing Swag Labs site", () => {
         await page.close();
     });
 
-    test("Verfy checkout", async ({page}) => {
+    test("Verify checkout", async ({page}) => {
         await page.goto("https://www.saucedemo.com/");
         await expect(page).toHaveTitle("Swag Labs");
         
